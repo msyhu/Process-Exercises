@@ -12,16 +12,6 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-
-
-//
-// Expected output:
-//
-// It breaks my heart to see my fellow zealots suffer on the battlefield
-// But what if we dragoons went to their rescue?
-// Duh! Ra! Goon!
-//
-
 int main(int argc, char* argv[]){
     pid_t pid;
     int status;
@@ -48,3 +38,14 @@ int main(int argc, char* argv[]){
 
     return 0;
 }
+
+
+
+
+/*
+Expected output:
+
+It breaks my heart to see my fellow zealots suffer on the battlefield.
+But what if we dragoons went to their rescue?
+Duh! Ra! Goon!
+*/

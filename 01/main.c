@@ -25,13 +25,13 @@ int main(int argc, char* argv[]){
     pid_t pid;
 
     switch(pid = fork()){
-        <?1/>:
+        default:
             // HINT: The parent process should fall into this scope.
             the_answer = 42;
             arthur = 6 * 9;
             sleep(SEVEN_AND_A_HALF_MILLION_YEARS);
             break;
-        <?2/>:
+        case 0:
             // HINT: The child process should fall into this scope.
             sleep(A_DAY * 2);
             break;
@@ -47,3 +47,18 @@ int main(int argc, char* argv[]){
 
     return 0;
 }
+
+
+
+
+/*
+Expected output:
+
+My pid is 7421 (child)
+The answer to the ultimate question of life the universe and everything is 0.
+But Arthur replied that it was 0.
+
+My pid is 7420 (parent)
+The answer to the ultimate question of life the universe and everything is 42.
+But Arthur replied that it was 54.
+*/
