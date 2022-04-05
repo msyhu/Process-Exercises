@@ -20,7 +20,8 @@ int main(int argc , char *argv[])
             sleep(3);
             break;
     }
-    printf("PID=%ld %s idata =%d istack =%d\n", (long)getpid(), (childPid==0) ? "(child)" : "(parent)", idata , istack);
+    printf("PID=%ld %s idata =%d istack =%d\n", (long)getpid(), 
+            (childPid==0) ? "(child)" : "(parent)", idata , istack);
     exit(childPid);
     return 0;
 }
