@@ -23,7 +23,7 @@ int main(int argc , char *argv[])
         printf("parent: fork failed\n");
     }
 
-    prinf("bye\n");
+    printf("bye\n");
 
     return 0;
 }
